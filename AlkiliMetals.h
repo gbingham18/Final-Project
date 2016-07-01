@@ -4,17 +4,18 @@ using namespace std;
 #ifndef AlkiliMetals_H
 #define AlkiliMetals_H
 
+//Each class has the same purposes
 class AlkiliMetals
 {
 public:
 	AlkiliMetals();
-	AlkiliMetals(string setElementName)
+	AlkiliMetals(string setElementName)//Construct object based on what array slot was selected
     {
         elementName = setElementName;
     }
 	void changeProperties()
     {
-        if(elementName == "Lithium")
+        if(elementName == "Lithium")//Alters properties of selected element
         {
             stateOfMatter = "solid";
             atomicNumber = 3;
@@ -62,7 +63,7 @@ public:
             electronegativity = 0.7;
         }
     }
-	void getLewisDotStructure()
+	void getLewisDotStructure()//Returns Lewis Dot Structure to give a visual of how many valence electrons the selected element has.
     {
 		if(elementName == "Lithium")
 		{
